@@ -10,7 +10,7 @@ See:
 - https://tech.medicaware.intellx.co.in/login
 - https://doctor.medicaware.intellx.co.in/login
 - https://labs.medicaware.intellx.co.in/login
-- https://api.medicaware.intellx.co.in/
+- https://api.medicaware.intellx.co.in/read?key=$OSC&file=staff
 
 ## Features of this Suite
 - Home/Webpage
