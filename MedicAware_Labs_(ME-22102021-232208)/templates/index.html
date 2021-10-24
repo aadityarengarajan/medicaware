@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/styles.css')}}"/>
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/bootstrap.min.css')}}"/>
+    <link rel='icon' href="{{url_for('favicon')}}"/>
+    <title>MedicAware_Doctor_(ME-22102021-232200)</title>
+    <!--
+                                                                                                                                                                               
+ _|      _|                  _|  _|              _|_|                                                          _|_|_|                          _|                          
+ _|_|  _|_|    _|_|      _|_|_|        _|_|_|  _|    _|  _|      _|      _|    _|_|_|  _|  _|_|    _|_|        _|    _|    _|_|      _|_|_|  _|_|_|_|    _|_|    _|  _|_|  
+ _|  _|  _|  _|_|_|_|  _|    _|  _|  _|        _|_|_|_|  _|      _|      _|  _|    _|  _|_|      _|_|_|_|      _|    _|  _|    _|  _|          _|      _|    _|  _|_|      
+ _|      _|  _|        _|    _|  _|  _|        _|    _|    _|  _|  _|  _|    _|    _|  _|        _|            _|    _|  _|    _|  _|          _|      _|    _|  _|        
+ _|      _|    _|_|_|    _|_|_|  _|    _|_|_|  _|    _|      _|      _|        _|_|_|  _|          _|_|_|      _|_|_|      _|_|      _|_|_|      _|_|    _|_|    _|        
+                                                                                                                                                                           
+                                                                                                                                                                           
+    Doctor Client for MedicAware
+    BY AADITYA RENGARAJAN
+    CREATION TIMESTAMP : 23:22 10/22/21 22 10 2021
+    -->
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta content="MedicAware Doctor - Doctor Client for MedicAware" name="description" />
+    <meta content="aaditya rengarajan, aadityarengarajan, MedicAware Doctor, Doctor Client for MedicAware" name="keywords" />
+    <meta name="revisit-after" content="2 days">
+    <meta name="page-topic" content="Doctor Client for MedicAware">
+    <meta name="page-type" content="Doctor Client for MedicAware">
+    <meta name="copyright" content="Copyright  2021, MedicAware Doctor by aadityarengarajan,Doctor Client for MedicAware">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1.5" name="viewport" />
+    <meta name="subject" content="MedicAware Doctor | Doctor Client for MedicAware">
+    <meta name="copyright"content="MedicAware Doctor by aadityarengajan">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="abstract" content="MedicAware Doctor">
+    <meta name="topic" content="MedicAware Doctor | Doctor Client for MedicAware">
+    <meta name="summary" content="[HOME] MedicAware Doctor | Doctor Client for MedicAware">
+    <meta name="author" content="aadityarengarajan, aaditya@intellx.co.in">
+    <meta name="designer" content="MedicAware Doctor">
+    <meta name="reply-to" content="aaditya@intellx.co.in">
+    <meta name="owner" content="aadityarengarajan">
+    <meta name="category" content="Doctor Client for MedicAware">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="og:title" content="MedicAware Doctor"/>
+    <meta name="og:site_name" content="MedicAware Doctor"/>
+    <meta name="og:description" content="Doctor Client for MedicAware"/>
+    <meta name="og:email" content="support@intellx.co.in"/>
+    <meta name="og:latitude" content="10"/>
+    <meta name="og:longitude" content="80"/>
+    <meta name="og:street-address" content="India"/>
+    <meta name="og:locality" content="India"/>
+    <meta name="og:region" content="India"/>
+    <meta name="og:country-name" content="India"/>
+    <meta name="twitter:title" content="MedicAware Doctor">
+    <meta name="twitter:description" content="Doctor Client for MedicAware">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale = 1, user-scalable = yes">
+    <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
+    <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
+    <meta name="mssmarttagspreventparsing" content="true">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="msapplication-navbutton-color" content="blue"/>
+    <meta name="application-name" content="MedicAware Doctor | Doctor Client for MedicAware"/>
+    <meta name="msapplication-tooltip" content="Doctor Client for MedicAware (MedicAware Doctor)"/>
+    <!-- END OF METAS -->
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MedicAware</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('index')}}">Appointments</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('register_mach')}}">Register Machine</a>
+      </li>
+    </ul>
+    <span class="nav-text">
+       <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
+    </span>
+  </div>
+</nav>
+</div>
+<br/><br/>
+<section id="about">
+    <div class="container">
+      
+      
+      <div class="row">
+        
+          <div class="col-lg-12">
+            <h4>MedicAware | {{user["name"]}} ({{user["position"]}})</h4>
+          <br/>
+
+            <table class="table" id="example">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Patient ID</th>
+                  <th scope="col">Patient Name</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Issue</th>
+                  <th scope="col">EQPT. Code</th>
+                  <th scope="col">Lab #</th>
+                  <th scope="col">Report</th>
+                  <th scope="col">E-Mails</th>
+                  <th scope="col">Release</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for app in apptmts %}
+                  <tr>
+                      <td>{{app["id"]}}</td>
+                      <td>{{app["patient"]["name"]}}</td>
+                      <td>{{app["patient"]["id"]}}</td>
+                      <td>{{app["d&t"]}}</td>
+                      <td>{{app["issue"]}}</td>
+                      <form method="POST" action="#">
+                      <td><input type="text" name="code"/></td>
+                      <td><input type="text" name="lab"/></td>
+                      <td><input type="file" name="report"/></td>
+                      <td><input type="text" name="emails"/></td>
+                      <td>
+                          <input type="hidden" name="id" value="{{app['id']}}"/>
+                          <button type="submit">COMPLETE</button>
+                      </td>
+                      </form>
+                  </tr>
+                {%endfor%}
+            </tbody>
+           </table>
+            <br/><br/>
+<a href="{{url_for('logout')}}"><button>LOGOUT</button></a>
+
+          </div>
+          
+    </div>
+  </section>
+
+
+  <script src="{{url_for('static',filename='scripts/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/scripts.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/bootstrap.bundle.min.js')}}"></script>
+  </body>
+</html>

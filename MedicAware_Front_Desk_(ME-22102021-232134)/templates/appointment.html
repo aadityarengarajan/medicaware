@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/bootstrap.min.css')}}"/>
+    <link rel='icon' href="{{url_for('favicon')}}"/>
+    <title>MedicAware | SOSC HackNight 2021</title>
+    <!--
+                                                                                                               
+ _|      _|                  _|  _|              _|_|                                                      
+ _|_|  _|_|    _|_|      _|_|_|        _|_|_|  _|    _|  _|      _|      _|    _|_|_|  _|  _|_|    _|_|    
+ _|  _|  _|  _|_|_|_|  _|    _|  _|  _|        _|_|_|_|  _|      _|      _|  _|    _|  _|_|      _|_|_|_|  
+ _|      _|  _|        _|    _|  _|  _|        _|    _|    _|  _|  _|  _|    _|    _|  _|        _|        
+ _|      _|    _|_|_|    _|_|_|  _|    _|_|_|  _|    _|      _|      _|        _|_|_|  _|          _|_|_|  
+                                                                                                           
+                                                                                                           
+    Suite of Software for Hospitals
+    For SOSC HackNight 2021
+    BY AADITYA RENGARAJAN
+    CREATION TIMESTAMP : 22:23 10/22/21 22 10 2021
+    -->
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta content="MedicAware - Suite of Software for Hospitals" name="description" />
+    <meta content="aaditya rengarajan, aadityarengarajan, MedicAware, Suite of Software for Hospitals" name="keywords" />
+    <meta name="revisit-after" content="2 days">
+    <meta name="page-topic" content="Suite of Software for Hospitals">
+    <meta name="page-type" content="Suite of Software for Hospitals">
+    <meta name="copyright" content="Copyright  2021, MedicAware by aadityarengarajan,Suite of Software for Hospitals">
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <meta name="subject" content="MedicAware | Suite of Software for Hospitals">
+    <meta name="copyright"content="MedicAware by aadityarengajan">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="abstract" content="MedicAware">
+    <meta name="topic" content="MedicAware | Suite of Software for Hospitals">
+    <meta name="summary" content="[HOME] MedicAware | Suite of Software for Hospitals">
+    <meta name="author" content="aadityarengarajan, aaditya@intellx.co.in">
+    <meta name="designer" content="MedicAware">
+    <meta name="reply-to" content="aaditya@intellx.co.in">
+    <meta name="owner" content="aadityarengarajan">
+    <meta name="category" content="Suite of Software for Hospitals">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="og:title" content="MedicAware"/>
+    <meta name="og:site_name" content="MedicAware"/>
+    <meta name="og:description" content="Suite of Software for Hospitals"/>
+    <meta name="og:email" content="support@intellx.co.in"/>
+    <meta name="og:latitude" content="10"/>
+    <meta name="og:longitude" content="80"/>
+    <meta name="og:street-address" content="India"/>
+    <meta name="og:locality" content="India"/>
+    <meta name="og:region" content="India"/>
+    <meta name="og:country-name" content="India"/>
+    <meta name="twitter:title" content="MedicAware">
+    <meta name="twitter:description" content="Suite of Software for Hospitals">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale = 1, user-scalable = yes">
+    <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
+    <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
+    <meta name="mssmarttagspreventparsing" content="true">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="msapplication-navbutton-color" content="blue"/>
+    <meta name="application-name" content="MedicAware | Suite of Software for Hospitals"/>
+    <meta name="msapplication-tooltip" content="Suite of Software for Hospitals (MedicAware)"/>
+    <!-- END OF METAS -->
+  </head>
+  <body>
+<div class="pos-f-t">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MedicAware</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="javascript:BriefAirport()">Doctor/Lab Appointment</a>
+      </li>
+      <script>
+         function BriefAirport() {
+            var person = prompt("PATIENT ID : ");
+            window.location = "{{url_for('appointment')}}?patient="+person;
+         }
+      </script>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('register_pat')}}">Register Patient</a>
+      </li>
+    </ul>
+    <span class="nav-text">
+       <a class="nav-link" href="{{url_for('logout')}}">Log Out</a>
+    </span>
+  </div>
+</nav>
+</div>
+<br/><br/>
+<section id="about">
+    <div class="container">
+      
+      
+      <div class="row">
+        
+          {% if step==0 %}
+          <div class="col-lg-12">
+            <h4>Book an Appointment</h4>
+          <br/>
+          <form method="POST" action="{{url_for('appointment')}}">
+             <div class="form-group">
+              <label for="Doctor_Select">Doctor</label>
+              <select class="form-control" id="Doctor_Select" name="doctor">
+                {% for doc in doctors %}
+                <option value="{{doc['id']}}">{{doc["name"]}} ({{doc["position"]}})</option>
+                {% endfor %}
+              </select>
+            </div>
+            <input type="hidden" name="check_availability" value="true">
+            <button type="submit" class="btn btn-primary mb-2">CHECK AVAILABILITY</button>
+          </form>
+          </div>
+          {% endif %}
+          {% if step==1 %}
+          <div class="col-lg-6">
+            <h4>Dr. {{doc["name"]}}'s Bookings//Occupancies ({{doc["position"]}})</h4>
+            <br/>
+          {% for i in bookings %}
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">{{i}}</h5>
+              <p class="card-text">Booked//Busy from {{i.split(" ")[1]}} to {{i.split(" ")[-1]}}.</p>
+            </div>
+          </div>
+          <br/>
+          {% endfor %}
+          </div>
+          <div class="col-lg-6">
+            <form method="POST" action="{{url_for('appointment')}}">
+              <div class="form-group">
+                <label for="Issue">Describe your Issue</label>
+                <textarea class="form-control" id="Issue" name="issue" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="DateTime">Choose your Appointment Date and Time</label>
+                <input type="datetime-local" name="dt" class="form-control" id="DateTime"/>
+              </div>
+              <input type="hidden" name="doctor" value="{{doc['id']}}"/>
+              <button type="submit" class="btn btn-primary mb-2">BOOK APPOINTMENT</button>
+            </form>
+          </div>
+          {% endif %}
+
+          
+    </div>
+  </section>
+
+    <script src="{{url_for('static',filename='scripts/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='scripts/scripts.js')}}"></script>
+    <script src="{{url_for('static',filename='scripts/bootstrap.bundle.min.js')}}"></script>
+  </body>
+</html>

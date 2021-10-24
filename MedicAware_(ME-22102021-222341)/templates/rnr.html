@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/styles.css')}}"/>
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/bootstrap.min.css')}}"/>
+    <link rel='icon' href="{{url_for('favicon')}}"/>
+    <title>MedicAware | SOSC HackNight 2021</title>
+    <!--
+                                                                                                               
+ _|      _|                  _|  _|              _|_|                                                      
+ _|_|  _|_|    _|_|      _|_|_|        _|_|_|  _|    _|  _|      _|      _|    _|_|_|  _|  _|_|    _|_|    
+ _|  _|  _|  _|_|_|_|  _|    _|  _|  _|        _|_|_|_|  _|      _|      _|  _|    _|  _|_|      _|_|_|_|  
+ _|      _|  _|        _|    _|  _|  _|        _|    _|    _|  _|  _|  _|    _|    _|  _|        _|        
+ _|      _|    _|_|_|    _|_|_|  _|    _|_|_|  _|    _|      _|      _|        _|_|_|  _|          _|_|_|  
+                                                                                                           
+                                                                                                           
+    Suite of Software for Hospitals
+    For SOSC HackNight 2021
+    BY AADITYA RENGARAJAN
+    CREATION TIMESTAMP : 22:23 10/22/21 22 10 2021
+    -->
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta content="MedicAware - Suite of Software for Hospitals" name="description" />
+    <meta content="aaditya rengarajan, aadityarengarajan, MedicAware, Suite of Software for Hospitals" name="keywords" />
+    <meta name="revisit-after" content="2 days">
+    <meta name="page-topic" content="Suite of Software for Hospitals">
+    <meta name="page-type" content="Suite of Software for Hospitals">
+    <meta name="copyright" content="Copyright  2021, MedicAware by aadityarengarajan,Suite of Software for Hospitals">
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <meta name="subject" content="MedicAware | Suite of Software for Hospitals">
+    <meta name="copyright"content="MedicAware by aadityarengajan">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="abstract" content="MedicAware">
+    <meta name="topic" content="MedicAware | Suite of Software for Hospitals">
+    <meta name="summary" content="[HOME] MedicAware | Suite of Software for Hospitals">
+    <meta name="author" content="aadityarengarajan, aaditya@intellx.co.in">
+    <meta name="designer" content="MedicAware">
+    <meta name="reply-to" content="aaditya@intellx.co.in">
+    <meta name="owner" content="aadityarengarajan">
+    <meta name="category" content="Suite of Software for Hospitals">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="og:title" content="MedicAware"/>
+    <meta name="og:site_name" content="MedicAware"/>
+    <meta name="og:description" content="Suite of Software for Hospitals"/>
+    <meta name="og:email" content="support@intellx.co.in"/>
+    <meta name="og:latitude" content="10"/>
+    <meta name="og:longitude" content="80"/>
+    <meta name="og:street-address" content="India"/>
+    <meta name="og:locality" content="India"/>
+    <meta name="og:region" content="India"/>
+    <meta name="og:country-name" content="India"/>
+    <meta name="twitter:title" content="MedicAware">
+    <meta name="twitter:description" content="Suite of Software for Hospitals">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale = 1, user-scalable = yes">
+    <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
+    <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
+    <meta name="mssmarttagspreventparsing" content="true">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="msapplication-navbutton-color" content="blue"/>
+    <meta name="application-name" content="MedicAware | Suite of Software for Hospitals"/>
+    <meta name="msapplication-tooltip" content="Suite of Software for Hospitals (MedicAware)"/>
+    <!-- END OF METAS -->
+  </head>
+  <body>
+    <div class="b4_teaser">
+      <a href="https://www.cowin.gov.in/" target="_blank">Get your COVID-19 Vaccination Now from the CoWIN WebApp and Stay Safe!</a>
+    </div>
+<div class="pos-f-t">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MedicAware</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('why_us')}}">Why Us?</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{{url_for('services')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{url_for('services')}}">General Consultation</a>
+          <a class="dropdown-item" href="{{url_for('services')}}">ENT</a>
+          <a class="dropdown-item" href="{{url_for('services')}}">Pediatrics</a>
+          <a class="dropdown-item" href="{{url_for('services')}}">Urology</a>
+          <a class="dropdown-item" href="{{url_for('services')}}">Cardiology</a>
+          <div class="dropdown-divider"></div>
+           <a class="dropdown-item" target="_blank" href="https://patient.medicaware.intellx.co.in">Self-Diagnosis</a>
+          <a class="dropdown-item" href="https://www.cowin.gov.in">COVID-19 Vaccination</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Rights and Responsibilities<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('contact')}}">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('careers')}}">Careers</a>
+      </li>
+    </ul>
+    <span class="nav-text">
+       <a class="nav-link" target="_blank" href="https://patient.medicaware.intellx.co.in">Patient Portal</a>
+    </span>
+  </div>
+</nav>
+</div>
+<br/><br/>
+<section id="about">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-12 text-center">
+        <h2>your rights as a patient</h2>
+        <hr class="star-primary">
+        </div>
+      </div>
+      
+      <div class="row">
+
+        <ul>
+<li>To give us complete and accurate information about your health &amp; previous medical history.</li>
+<li>To inform us of changes in your condition or symptoms, including pain or etc.</li>
+<li>To strictly abide by the hospital’s rules and regulations as regards smoking, noise, and regulation of visitors.</li>
+<li>To seek clarifications from the doctors if you don’t understand the information we give you about your treatment.</li>
+<li>To settle your hospital bills or make arrangements to meet the financial obligations arising from your care.</li>
+<li>Ask for the information about your medicines in terms you can understand as you need to know.</li>
+</ul>
+        
+      </div>
+
+      <br/>
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+        <h2>our responsibilities as your caretaker</h2>
+        <hr class="star-primary">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+        <ul>
+<li>24-hr Pharmacy</li>
+<li>Spiritual &amp; Pastoral Care</li>
+<li>Cardiac Rehabilitation</li>
+<li>24 X 7 Hi tech Ambulance Services</li>
+<li>Pre-operative Client Education &amp; Consultation</li>
+<li>Food &amp; Nutrition services</li>
+<li>Services for inpatients</li>
+<li>Out-patient Counseling Services</li>
+<li>Heart Healthy Cooking Classes</li>
+<li>Nutrition Education Opportunities</li>
+</ul>
+<p>&nbsp;</p>
+</div>
+<div class="col">
+<p><strong>Individual counseling is available for</strong></p>
+<ul>
+<li>Heart health (Hyperlipidemia)</li>
+<li>Weight management</li>
+<li>Hypertension</li>
+<li>Diabetes</li>
+<li>Renal failure</li>
+<li>Organ transplant</li>
+<li>Dialysis</li>
+<li>Nutrition for children</li>
+<li>Ulcers, GERD and other gastrointestinal problems, Etc</li>
+</ul>
+</div>
+      </div>
+      
+    </div>
+  </section>
+
+<br/><br/>
+  <footer class="w-100 py-4 flex-shrink-0 bg-dark">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">MedicAware</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Aaditya Rengarajan</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="{{url_for('why_us')}}">Why Us?</a></li>
+                        <li><a href="#">Rights and Responsibilities</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="{{url_for('why_us')}}">Why Us?</a></li>
+                        <li><a href="#">Rights and Responsibilities</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Careers</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="{{url_for('static',filename='scripts/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/scripts.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/popper.min.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/bootstrap.bundle.min.js')}}"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+	"subscribers" : ["MAP1"],
+	"notices" : [
+					{
+						"code" : "DFI12",
+						"title" : "HOSPITAL INNAUGRATION",
+						"content" : "HOSPITAL HAS BEEN OPENED AND INNAUGRATED SUCCESFULY, NOW ACCEPTING CUSTOMERS!",
+						"scope" : "FTLPDO",
+						"valid" : "unlimited"
+					},
+					{
+						"code" : "DCT13",
+						"title" : "SURGERY FACILITIES",
+						"content" : "SURGERY FACILITIES ARE TEMPORARILY CLOSED DUE TO RENOVATION. SORRY FOR THE INCONVENIENCE.",
+						"scope" : "FTLD",
+						"valid" : "19/01/2022"
+					},
+					{
+						"code" : "LBS27",
+						"title" : "LABS",
+						"content" : "ALL LAB TESTS ARE NOW 30% OFF!",
+						"scope" : "TLO",
+						"valid" : "31/12/2021"
+					}
+			    ]
+}

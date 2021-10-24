@@ -1,0 +1,15 @@
+{
+    "name": "MedicAware",
+    "description": "Suite of Software for Hospitals",
+    "created": "22/10/2021",
+    "completed": "true",
+    "modules": [
+        "flask",
+        "requests",
+        "json"
+    ],
+    "hosting": {
+        "hosted": "false"
+    },
+    "code": "ME-22102021-222341"
+}

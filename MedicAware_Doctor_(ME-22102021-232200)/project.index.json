@@ -1,0 +1,15 @@
+{
+    "name": "MedicAware Doctor",
+    "description": "Doctor Client for MedicAware",
+    "created": "22/10/2021",
+    "completed": "false",
+    "modules": [
+        "flask",
+        "json",
+        "requests"
+    ],
+    "hosting": {
+        "hosted": "false"
+    },
+    "code": "ME-22102021-232200"
+}

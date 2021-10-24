@@ -1,0 +1,28 @@
+[
+    {
+        "code": "LS54E",
+        "durn": "0",
+        "lab": "LAB08",
+        "name": "X-Ray Machine",
+        "reports": []
+    },
+    {
+        "code": "9AE8F",
+        "durn": "6",
+        "lab": "LAB05",
+        "name": "Sample Testing Centre",
+        "reports": [
+            {
+                "doctor": "MAS5",
+                "patient": "MAP1"
+            }
+        ]
+    },
+    {
+        "code": "AD8S",
+        "durn": "0",
+        "lab": "LAB02",
+        "name": "MRI Scanner Machine",
+        "reports": []
+    }
+]

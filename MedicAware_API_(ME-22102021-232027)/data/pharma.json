@@ -1,0 +1,34 @@
+[
+	{
+		"id" : "F0RADFG4",
+		"name" : "Povidone-Iodine Solution IP 10% w/v",
+		"common" : "Betadine",
+		"qt" : 52,
+		"price" : 350,
+		"prescription-required" : false
+	},
+	{
+		"id" : "E4S5AS",
+		"name" : "Paracetamol Tablet 650mg",
+		"common" : "Dolo 650",
+		"qt" : 89,
+		"price" : 75,
+		"prescription-required" : false
+	},
+	{
+		"id" : "E7R8GF",
+		"name" : "Paracetamol Tablet 500mg",
+		"common" : "Panadol 500",
+		"qt" : 95,
+		"price" : 55,
+		"prescription-required" : false
+	},
+	{
+		"id" : "GYJDSF6",
+		"name" : "Hydrocodone/APAP Anilide Analgesic",
+		"common" : "Vicodin Oral",
+		"qt" : 45,
+		"price" : 650,
+		"prescription-required" : true
+	}
+]

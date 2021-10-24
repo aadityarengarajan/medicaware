@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/styles.css')}}"/>
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/bootstrap.min.css')}}"/>
+    <link rel='icon' href="{{url_for('favicon')}}"/>
+    <title>MedicAware_Android_(ME-22102021-232116)</title>
+    <!--
+                                                                                                                                                                                   
+ _|      _|                  _|  _|              _|_|                                                            _|_|                    _|                      _|        _|  
+ _|_|  _|_|    _|_|      _|_|_|        _|_|_|  _|    _|  _|      _|      _|    _|_|_|  _|  _|_|    _|_|        _|    _|  _|_|_|      _|_|_|  _|  _|_|    _|_|          _|_|_|  
+ _|  _|  _|  _|_|_|_|  _|    _|  _|  _|        _|_|_|_|  _|      _|      _|  _|    _|  _|_|      _|_|_|_|      _|_|_|_|  _|    _|  _|    _|  _|_|      _|    _|  _|  _|    _|  
+ _|      _|  _|        _|    _|  _|  _|        _|    _|    _|  _|  _|  _|    _|    _|  _|        _|            _|    _|  _|    _|  _|    _|  _|        _|    _|  _|  _|    _|  
+ _|      _|    _|_|_|    _|_|_|  _|    _|_|_|  _|    _|      _|      _|        _|_|_|  _|          _|_|_|      _|    _|  _|    _|    _|_|_|  _|          _|_|    _|    _|_|_|  
+                                                                                                                                                                               
+                                                                                                                                                                               
+    Android Client for MedicAware
+    BY AADITYA RENGARAJAN
+    CREATION TIMESTAMP : 23:21 10/22/21 22 10 2021
+    -->
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta content="MedicAware Android - Android Client for MedicAware" name="description" />
+    <meta content="aaditya rengarajan, aadityarengarajan, MedicAware Android, Android Client for MedicAware" name="keywords" />
+    <meta name="revisit-after" content="2 days">
+    <meta name="page-topic" content="Android Client for MedicAware">
+    <meta name="page-type" content="Android Client for MedicAware">
+    <meta name="copyright" content="Copyright  2021, MedicAware Android by aadityarengarajan,Android Client for MedicAware">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="MedicAware Android | Android Client for MedicAware">
+    <meta name="copyright"content="MedicAware Android by aadityarengajan">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="abstract" content="MedicAware Android">
+    <meta name="topic" content="MedicAware Android | Android Client for MedicAware">
+    <meta name="summary" content="[HOME] MedicAware Android | Android Client for MedicAware">
+    <meta name="author" content="aadityarengarajan, aaditya@intellx.co.in">
+    <meta name="designer" content="MedicAware Android">
+    <meta name="reply-to" content="aaditya@intellx.co.in">
+    <meta name="owner" content="aadityarengarajan">
+    <meta name="category" content="Android Client for MedicAware">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="og:title" content="MedicAware Android"/>
+    <meta name="og:site_name" content="MedicAware Android"/>
+    <meta name="og:description" content="Android Client for MedicAware"/>
+    <meta name="og:email" content="support@intellx.co.in"/>
+    <meta name="og:latitude" content="10"/>
+    <meta name="og:longitude" content="80"/>
+    <meta name="og:street-address" content="India"/>
+    <meta name="og:locality" content="India"/>
+    <meta name="og:region" content="India"/>
+    <meta name="og:country-name" content="India"/>
+    <meta name="twitter:title" content="MedicAware Android">
+    <meta name="twitter:description" content="Android Client for MedicAware">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale = 1, user-scalable = yes">
+    <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
+    <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
+    <meta name="mssmarttagspreventparsing" content="true">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="msapplication-navbutton-color" content="blue"/>
+    <meta name="application-name" content="MedicAware Android | Android Client for MedicAware"/>
+    <meta name="msapplication-tooltip" content="Android Client for MedicAware (MedicAware Android)"/>
+    <!-- END OF METAS -->
+  </head>
+  <body style="height:100vh;">
+    <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('index')}}"><img src="https://cdn.iconscout.com/icon/free/png-64/home-2456682-2036136.png" width=50% style="filter:brightness(5%);"/></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('staff')}}"><img src="https://cdn.iconscout.com/icon/free/png-64/profile-2456677-2036131.png" width=50% style="filter:brightness(5%);"/></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{url_for('self-diagnosis')}}"><img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/stethoscope-61-189610.png" width=50% style="filter:brightness(150%);"/></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="{{url_for('webMD')}}"><img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/doctor-1734387-1475336.png" width=50% style="filter:brightness(5%);"/></a>
+  </li>
+</ul>
+<section class="padder" style="background-color: #F4F0E1;color:#2B3531;height: 100%">
+    <br/>
+    <h3>doctors suggested for you are</h3>
+    <br/>
+    {% for i in doctors %}
+        <li>{{i["name"]}} - {{i["position"]}}</li>
+    {% endfor %}
+    <br/><br/>
+        <a href="https://patient.medicaware.intellx.co.in/book-appointment" target="_blank" class="card-link">Book an Appointment</a>
+    <br/>
+    <br/>
+</section>
+  <script src="{{url_for('static',filename='scripts/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/scripts.js')}}"></script>
+  </body>
+</html>

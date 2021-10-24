@@ -1,0 +1,29 @@
+[
+    {
+        "code": "LS54E",
+        "durn": "0",
+        "lab": "LAB08",
+        "name": "X-Ray Machine",
+        "output": "image",
+        "reports": []
+    },
+    {
+        "code": "9AE8F",
+        "durn": "6",
+        "lab": "LAB05",
+        "name": "Sample Testing Centre",
+        "output": "table",
+        "reports": [
+            {
+                "doctor": "MAS5",
+                "patient": "MAP1",
+                "result": {
+                    "COL. FORM": ">10,00,000",
+                    "RBC": "AVBL",
+                    "URN": "N/A",
+                    "WBC": "AVBL"
+                }
+            }
+        ]
+    }
+]

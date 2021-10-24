@@ -1,0 +1,36 @@
+{
+  "food poisoning": {
+    "symptoms": [
+      "cough",
+      "vomit",
+      "fever",
+      "high temperature"
+    ],
+    "doctors": [
+      "MAS11",
+      "MAS8"
+    ]
+  },
+  "asthma": {
+    "symptoms": [
+      "breathing difficulty",
+      "cough",
+      "chest pain"
+    ],
+    "doctors": [
+      "MAS11",
+      "MAS8",
+      "MAS9"
+    ]
+  },
+  "cardiac issue": {
+    "symptoms": [
+      "chest pain",
+      "cough"
+    ],
+    "doctors": [
+      "MAS9",
+      "MAS8"
+    ]
+  }
+}
