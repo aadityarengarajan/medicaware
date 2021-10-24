@@ -28,3 +28,4 @@ More features are in exploration and consideration, but haven't been added due t
 - Circulars as Newsletter for PR Imrpovement (e-mailing system already implemented, just need to add "subscribe" button and form at patient portal)
 - Pharmacy Management at ('pharmacy.medicaware.intellx.co.in') where one can manage Medicines and use an online POS System (Point of Sales System)
 - AI Assisted First-Aid for Patient Portal
+- Photo Storage and Retrieval In-Database (add a route to API)
