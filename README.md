@@ -1,6 +1,9 @@
 # MedicAware
 ## Suite of Hospital Software for SOSC HackNight 2021
 by aadityarengarajan
+
+Hi! I have created this repository with a complete suite of Hospital Software within 36 hours of SOSC's HackNight for the Hackathon.
+
 ## Hosted Links (Demos)
 See:
 - https://medicaware.intellx.co.in/
