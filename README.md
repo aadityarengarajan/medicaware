@@ -4,7 +4,7 @@ by aadityarengarajan
 
 Hi! I have created this repository with a complete suite of Hospital Software within 36 hours of SOSC's HackNight for the Hackathon.
 
-## Hosted Links (Demos)
+## Hosted Links (Demos - Deprecated, do NOT work now)
 See:
 - https://medicaware.intellx.co.in/
 - https://patient.medicaware.intellx.co.in/sign-up-log-in
@@ -14,6 +14,10 @@ See:
 - https://doctor.medicaware.intellx.co.in/login
 - https://labs.medicaware.intellx.co.in/login
 - https://api.medicaware.intellx.co.in/read?key=$OSC&file=staff
+
+## Skillsets Used
+- Created this project using Python-Flask and HTML/CSS/JS
+- Hosted it on my own Ubuntu server using Gunicorn and NGINX (now taken down due to server issues)
 
 ## Features of this Suite
 - Home/Webpage
