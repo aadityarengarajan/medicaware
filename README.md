@@ -39,9 +39,9 @@ More features are in exploration and consideration, but haven't been added due t
 
 ## Sample Credentials
 
-+------------------------------------------------+
-|  Position |           ID          |  Password  |
-|------------------------------------------------|
-|  Patient  | thisisaarti@gmail.com | akhare     |
-|   Staff   | pdarr@outlook.com     | pinkyddar  |
-+------------------------------------------------+
+| Position     | ID                     | Password  |
+|--------------|------------------------|-----------|
+| Patient      | thisisaarti@gmail.com  | akhare    |
+| Doctor       | k.mattthewwww@live.com | kirahew   |
+| Receptionist | aruna01@yahoo.co.in    | arunur    |
+| Lab Operator | dmondy@gmail.com       | darpanody |
