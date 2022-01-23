@@ -4,7 +4,7 @@ by aadityarengarajan
 
 Hi! I have created this repository with a complete suite of Hospital Software within 36 hours of SOSC's HackNight for the Hackathon.
 
-## Hosted Links (Demos - Deprecated, do NOT work now)
+## Hosted Links
 See:
 - https://medicaware.intellx.co.in/
 - https://patient.medicaware.intellx.co.in/sign-up-log-in
@@ -17,7 +17,7 @@ See:
 
 ## Skillsets Used
 - Created this project using Python-Flask and HTML/CSS/JS
-- Hosted it on my own Ubuntu server using Gunicorn and NGINX (now taken down due to server issues)
+- Hosted it on my own Ubuntu server using Gunicorn and NGINX
 
 ## Features of this Suite
 - Home/Webpage
@@ -36,3 +36,12 @@ More features are in exploration and consideration, but haven't been added due t
 - Pharmacy Management at ('pharmacy.medicaware.intellx.co.in') where one can manage Medicines and use an online POS System (Point of Sales System)
 - AI Assisted First-Aid for Patient Portal
 - Photo Storage and Retrieval In-Database (add a route to API)
+
+## Sample Credentials
+
++------------------------------------------------+
+|  Position |           ID          |  Password  |
+|------------------------------------------------|
+|  Patient  | thisisaarti@gmail.com | akhare     |
+|   Staff   | pdarr@outlook.com     | pinkyddar  |
++------------------------------------------------+
