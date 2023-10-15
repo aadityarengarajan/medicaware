@@ -4,6 +4,8 @@ by aadityarengarajan
 
 Hi! I have created this repository with a complete suite of Hospital Software within 36 hours of SOSC's HackNight for the Hackathon.
 
+I dedicated a continuous 36-hour effort to the development of my project for the hackathon, which, unfortunately, did not result in winning any prizes. Regrettably, the judging panel seemed to hold the belief that I had misrepresented the origin of my project by suggesting it was a previously created work, which was not the case. In actuality, I exclusively focused on the development of this project during the designated 36-hour hackathon period.
+
 ## Hosted Links [REDUNDANT//TAKEN-DOWN]
 See:
 - https://medicaware.intellx.co.in/
