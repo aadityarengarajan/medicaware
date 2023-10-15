@@ -4,7 +4,7 @@ by aadityarengarajan
 
 Hi! I have created this repository with a complete suite of Hospital Software within 36 hours of SOSC's HackNight for the Hackathon.
 
-## Hosted Links
+## Hosted Links [REDUNDANT//TAKEN-DOWN]
 See:
 - https://medicaware.intellx.co.in/
 - https://patient.medicaware.intellx.co.in/sign-up-log-in
